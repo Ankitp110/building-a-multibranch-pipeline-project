@@ -16,16 +16,16 @@ pipeline {
         CI = 'true'
     }
 
-    stages {
-        stage("Checkout") {
-            steps{
-                checkout([  
-            $class: 'GitSCM', 
-            branches: [[name: "*/${params.BRANCH}"]],  
-            userRemoteConfigs: [[url: params.REPOSITORY]]
-        ])
-            }
-        }
+    // stages {
+    //     stage("Checkout") {
+    //         steps{
+    //             checkout([  
+    //         $class: 'GitSCM', 
+    //         branches: [[name: "*/${params.BRANCH}"]],  
+    //         userRemoteConfigs: [[url: params.REPOSITORY]]
+    //     ])
+    //         }
+    //     }
 
         stage('Build') {
             steps {
