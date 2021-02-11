@@ -5,13 +5,13 @@ pipeline {
             args '-p 3000:3000 -p 5000:5000'
         }
 
-        parameters {
-        string(name: 'BRANCH', description: 'Provide the branch name')
-        string(name: 'REPOSITORY', 
-        //defaultValue: 'https://github.com/Ankitp110/building-a-multibranch-pipeline-project', 
-        description: 'Repo name provided')
-        }
-    }
+    //     parameters {
+    //     string(name: 'BRANCH', description: 'Provide the branch name')
+    //     string(name: 'REPOSITORY', 
+    //     //defaultValue: 'https://github.com/Ankitp110/building-a-multibranch-pipeline-project', 
+    //     description: 'Repo name provided')
+    //     }
+    // }
     environment {
         CI = 'true'
     }
