@@ -16,7 +16,7 @@ pipeline {
         CI = 'true'
     }
 
-    // stages {
+    stages {
     //     stage("Checkout") {
     //         steps{
     //             checkout([  
