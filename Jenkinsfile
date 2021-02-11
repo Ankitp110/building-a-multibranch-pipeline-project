@@ -11,7 +11,7 @@ pipeline {
     //     //defaultValue: 'https://github.com/Ankitp110/building-a-multibranch-pipeline-project', 
     //     description: 'Repo name provided')
     //     }
-    // }
+    }
     environment {
         CI = 'true'
     }
